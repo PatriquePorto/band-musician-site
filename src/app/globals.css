@@ -30,3 +30,11 @@ h2 {
 .btn-accent {
   @apply bg-accent text-white hover:bg-accent-hover;
 }
+
+.btn-white {
+  @apply bg-white text-primary hover:bg-white/80;;
+}
+
+.section {
+  @apply py-12 xl:py-24;
+}

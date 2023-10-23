@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import Events from '../components/events/Events'
 
 export default function Home() {
   return (
     <main>
-      <h1>Home</h1>
+      <Events />
     </main>
   )
 }
