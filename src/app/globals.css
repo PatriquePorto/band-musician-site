@@ -93,3 +93,7 @@ h2 {
 .rap-volume-controls {
   @apply !bg-primary/80;
 }
+
+.active {
+  @apply border-b-2 border-accent;
+}
