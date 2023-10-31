@@ -1,7 +1,7 @@
 import SectionHeader from "../SectionHeader"
 import EventBox from "./EventBox"
 const getEvents = async () => {
-    const res = await fetch('http://localhost:4000/events')
+    const res = await fetch('https://json-server-six-wine.vercel.app/events') //http://localhost:4000/events
     return res.json()
 }
 
