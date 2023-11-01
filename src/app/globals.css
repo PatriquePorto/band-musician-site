@@ -128,3 +128,9 @@ h2 {
 .album-player .rap-controls .rap-total-time {
   @apply hidden;
 }
+
+/* Thumb Slider */
+
+.thumb-slider .swiper-slide-thumb-active {
+  @apply border-2 border-accent overflow-hidden transition-all duration-700;
+}

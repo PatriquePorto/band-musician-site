@@ -15,6 +15,10 @@ const links = [
     name: 'Discography'
   },
   {
+    path: 'blog',
+    name: 'Blog'
+  },
+  {
     path: 'contact',
     name: 'Contact'
   }

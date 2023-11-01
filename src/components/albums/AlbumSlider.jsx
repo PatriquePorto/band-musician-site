@@ -19,7 +19,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 const AlbumSlider = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
-  const { data, error } = useSWR('https://json-server-six-wine.vercel.app/albums', fetcher) //http://localhost:4000/albums
+  const { data, error } = useSWR('https://json-server-six-wine.vercel.app/albums', fetcher) //http://localhost:4000/albums https://json-server-six-wine.vercel.app/albums
  
   if (error) return 'Failed to fetch data'
   if (!data) return 'Loading...'
@@ -32,7 +32,7 @@ const AlbumSlider = () => {
          speed={1000}
          spaceBetween={80}
          allowTouchMover={false}
-         thumbs={{ swiper: thumbsSwiper }}  
+         thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null, }}  
          modules={[EffectCoverflow, FreeMode, Navigation, Thumbs]}
          coverflowEffect={{
            rotate: 50,
@@ -101,7 +101,57 @@ const AlbumSlider = () => {
           })}    
        </Swiper>    
        {/* Thumb Slider */}
-       <Swiper>Thumb slider</Swiper>
+       <Swiper
+         onSwiper={setThumbsSwiper}
+         modules={[FreeMode, Navigation, Thumbs]}
+         breakpoints={{
+           320: {
+             slidesPerView: 2,
+             spaceBetween: 10,
+           },
+           425 : {
+             slidesPerView: 2,
+             spaceBetween: 30,
+           },
+           768: {
+             slidesPerView: 3,
+             spaceBetween: 30,
+           },
+           1024: {
+             slidesPerView: 4,
+             spaceBetween: 30,
+           },
+           1310: {
+             slidesPerView: 5,
+             spaceBetween: 30,
+           },
+         }}
+         spaceBetween={20}
+         slidesPerView={5}
+         freeMode={true}
+         watchSlidesProgress={true}
+         className="thumb-slider"
+        >
+          {data.map((thumb, index) => {
+            return (
+              <SwiperSlide
+              key={index}
+              className="relative group overflow-hidden border-2 border-transparent w-[254px] rounded-[10px]"
+            >
+              {/* image */}
+              <div className="relative w-[180px] h-[180px] sm:w-[320px] sm:h-[320px] md:w-[220px] md:max-h-[220px] cursor-pointer ">
+                <Image
+                  className="object-contain group-hover:scale-105 transition-all duration-300 rounded-[10px]"
+                  src={thumb.img}
+                  fill
+                  priority
+                  alt="thumb"
+                />
+              </div>
+            </SwiperSlide>
+            )
+          })}
+        </Swiper>
     </>
     
   )

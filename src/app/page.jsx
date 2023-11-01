@@ -1,6 +1,8 @@
 import Albums from '../components/albums/Albums'
+import Blog from '../components/blog/Blog'
 import Events from '../components/events/Events'
 import Hero from '../components/Hero'
+import Newsletter from '../components/Newsletter'
 import Player from '../components/Player'
 
 export default function Home() {
@@ -10,7 +12,8 @@ export default function Home() {
       <Player />
       <Events />
       <Albums />
-      <div className='h-[4000px]'></div>
+      <Blog />
+      <Newsletter />  
     </main>
   )
 }
