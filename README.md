@@ -1,3 +1,30 @@
+<h1 align="center"> Musician/Band Web Page in NextJs </h1>
+
+</br>
+<img src="/preview.png" width="100%"></img>
+</br>
+
+<br>
+
+## 🚀 Tecnologies
+
+This project was developed with the following technologies:
+
+- React/Next
+- Javascript
+- Tailwind CSS
+- Json
+
+## 💻 Project
+
+<p dir="auto">A musician page web</p>
+
+- This application page contains: menu navigation, audio player interation.
+- Animation with motion framer.
+- Developed first with the mobile first methodology, then for desktop.
+- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -5,6 +32,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+
 npm run dev
 # or
 yarn dev
@@ -12,6 +40,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
