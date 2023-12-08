@@ -1,4 +1,4 @@
-<h1 align="center"> Musician/Band Web Page in NextJs </h1>
+<h1 align="center"> Project Band SleepWalkers </h1>
 
 </br>
 <img src="/preview.png" width="100%"></img>

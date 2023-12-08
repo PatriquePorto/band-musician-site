@@ -19,7 +19,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 const AlbumSlider = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
-  const { data, error } = useSWR('https://json-server-six-wine.vercel.app/albums', fetcher) //http://localhost:4000/albums https://json-server-six-wine.vercel.app/albums
+  const { data, error } = useSWR('https://json-sleepwalkers.vercel.app/albums', fetcher) //http://localhost:4000/albums https://json-sleepwalkers.vercel.app/albums
  
   if (error) return 'Failed to fetch data'
   if (!data) return 'Loading...'
@@ -44,7 +44,7 @@ const AlbumSlider = () => {
          className="album-slider">
           {data.map((album) => {
             return (
-            <SwiperSlide key={album.id} className="mb-12">
+            <SwiperSlide key={album.id} className="">
                <div className="w-full bg-secondary/80 rounded-[10px] flex flex-col xl:flex-row items-center
                   p-6 xl:p-12 gap-x-12 ">
                   {/* Image */}

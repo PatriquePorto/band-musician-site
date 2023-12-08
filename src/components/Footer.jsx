@@ -9,7 +9,8 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"	
 const Footer = () => {
   return (
-    <footer className="bg-accent section h-[500px] xl:h-auto">
+    <footer id="contact" className="bg-primary section h-[500px] xl:h-auto">
+      
        <div className="container mx-auto h-full flex flex-col items-center gap-y-8">
            {/* Email Link */}
           <motion.div
@@ -19,7 +20,7 @@ const Footer = () => {
              viewport={{ once: false, amount: 0.3 }}
            >
               <Link href='#'>
-                  <h2 className="text-[24px] lg:text-[38px] font-semibold leading-tight">hello@miareynolds.com</h2>
+                  <h2 className="text-[24px] lg:text-[38px] font-semibold leading-tight">sleepwalkers_brazil@gmail.com</h2>
               </Link>
           </motion.div>
        {/* Nav */}
@@ -55,10 +56,10 @@ const Footer = () => {
         >
            <Link
              href='#'
-             className="relative w-[250px] h-[50px] flex transition-all"
+             className="relative w-[280px] h-[100px] flex transition-all"
            >
                <Image 
-                  src={'/assets/header/logo.svg'}
+                  src={'/images/logo2.png'}
                   fill
                   className="object-contain"
                   alt="logo"

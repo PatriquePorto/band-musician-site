@@ -18,9 +18,9 @@ const EventBox = ({ events }) => {
             {/* Image */}
             <div className="hidden xl:flex w-[400px]">
                 <Image
-                  src={'/assets/events/singer.png'}
+                  src={'/images/gallery-1.jpeg'}
                   width={358}
-                  height={489}
+                  height={500}
                   priority
                   quality={100}
                   alt=""
@@ -51,7 +51,7 @@ const EventBox = ({ events }) => {
                             {/* Location */}
                             <div className="w-64 flex flex-col gap-y-2">
                                 <div className="text-lg leading-none font-bold">
-                                  {`${event.location.city}, ${event.location.country}`}
+                                  {`${event.location.city}, ${event.location.state}`}
                                 </div>
                                 <div className="flex items-center gap-x-1 justify-center xl:justify-start">
                                     <div className="text-accent text-lg">
@@ -66,7 +66,7 @@ const EventBox = ({ events }) => {
                           {event.priceRange}
                         </div>
                         {/* Button */}
-                        <button className="btn btn-sm btn-accent">Get Tickets</button>
+                        <button className="btn btn-sm btn-accent">Ingressos</button>
                     </div>
                     )
                 })}

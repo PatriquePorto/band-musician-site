@@ -134,3 +134,14 @@ h2 {
 .thumb-slider .swiper-slide-thumb-active {
   @apply border-2 border-accent overflow-hidden transition-all duration-700;
 }
+
+/*Responsive Mobile */
+
+@media screen and (max-width: 768px) {
+  .socials {
+    @apply hidden;
+  }
+  .logo {
+    
+  }
+}

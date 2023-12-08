@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.6",
     "framer-motion": "^10.16.4",
     "javascript-color-gradient": "^2.4.4",
     "json-server": "^0.17.4",
