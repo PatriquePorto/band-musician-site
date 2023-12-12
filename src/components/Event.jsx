@@ -12,7 +12,7 @@ const Event = () => {
       <div className='mb-20'>
        
        
-        <h1 className="uppercase text-[2.5rem]  font-bold ">Agenda</h1>
+        <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] font-bold pb-2 ">Agenda</h1>
         <hr className="w-[1263px] h-[3.5px] bg-white mb-5"  />
            
        </div>

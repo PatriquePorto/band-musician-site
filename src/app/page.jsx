@@ -6,9 +6,7 @@ import Events from '../components/events/Events'
 import ImageGallery from '../components/Gallery'
 import Intro from '../components/Intro'
 import Notice from '../components/Notice'
-import Login from '../components/Login'
-import Newsletter from '../components/Newsletter'
-import Player from '../components/Player'
+
 import VideoComponent from '../components/Video'
 
 

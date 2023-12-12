@@ -1,14 +1,15 @@
+'use client'
+
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import IntroImg from '../../public/images/bg.png'
 import { motion } from "framer-motion"
-import { fadeIn } from "../../variants"
+import { fadeIn } from "../../variants"	
 
 const Intro = () => {
   return (
 
-<div className="bg-image w-screen h-screen overflow-hidden flex flex-col justify-center items-center">
+<div className="bg-image w-screen h-screen overflow-hidden flex flex-col justify-center items-center" id='home'>
       <Image className="inset-0  w-full h-full object-fill object-center md:w-full md:h-full 2xl:w-full 2xl:h-full lg:w-full lg:h-full sm:max-w-200 sm:max-h-100 " 
         src={IntroImg} 
         alt="Band image"
@@ -17,10 +18,10 @@ const Intro = () => {
         sizes="(max-width: 768px) 100vw, (max-width: 480px) 50vw, 100hv"
         />
 
-  <div className="xl:w-[60%] h-[700px] sm:w-[80%] sm-h-[200px] xs:w-[80%] ms:w-[80%] ms:h-[500px] md:w-[70%] md:h-[600px] md:flex md:items-center md:justify-center lg:w-[65%] lg:h-[650px] absolute flex items-center justify-center">
+  <div className="xl:w-[60%] h-[700px] sm:w-[80%] sm-h-[200px] xs:w-[80%] ms:w-[70%] ms:h-[300px] md:w-[70%] md:h-[600px] md:flex md:items-center md:justify-center lg:w-[65%] lg:h-[650px] absolute flex items-center justify-center">
     {/* Parent container */}
        
-    <div
+    <motion.div
             variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={'show'}
@@ -33,7 +34,7 @@ const Intro = () => {
             alt="hero"
           fill
           />
-          <div className="mt-[400px] flex items-center justify-center ms:mt-80" >
+          <div className="mt-[400px] flex items-center justify-center xl:mt-[20rem] xl:w-full xl:ml-0 ms:mt-56 ms:w-[200px] ms:ml-9" >
               <Image 
                   className="flex xs:mt-16 ms:mt-28 object-cover z-10"
                   src="/images/logo2.png"
@@ -43,14 +44,12 @@ const Intro = () => {
                 />
           </div>
    
-      </div>
+      </motion.div>
        
   </div>
 
 </div>
-
-
-   
+ 
   )
 }
 

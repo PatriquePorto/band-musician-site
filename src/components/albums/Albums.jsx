@@ -9,15 +9,17 @@ import SectionHeader from "../SectionHeader"
 const Albums = () => {
   return (
     <section id="discography" className="mt-10">
-          <div className="container mx-auto h-full  flex items-center justify-center xl:justify-start">
+          <div className="container ms:-mt-14 mx-auto h-full  flex items-center justify-center xl:justify-start">
          
-              <div className='w-full items-center justify-center mx-auto mt-16'>  
-                  <h1 className="uppercase text-[2.5rem]  font-bold ">Discografia</h1>
-                  <hr className="w-[1263px] h-[3.5px] bg-white mb-5"  />
+          <div className='w-full items-center justify-center mx-auto mt-16'>  
+              <div className="xl:-ml-0 ms:-ml-12">
+                <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Discografia</h1>
+                <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] bg-white" />
+              </div>    
               </div>
        
           </div>
-        <div className="container mx-auto">
+        <div className="xl:container mx-auto ms:w-[95%] ">
             <SectionHeader />
             {/* Album Slider */}
             <motion.div

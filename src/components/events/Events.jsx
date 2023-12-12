@@ -11,11 +11,13 @@ const Events = async () => {
      <section className="section bg-secondary/60 " id="agenda" >
        <div className="container w-full mx-auto h-full flex items-center justify-center xl:justify-start">
          
-         <div className='w-full items-center justify-center mx-auto mb-20'>
+         <div className='w-full items-center ms:-mt-8 justify-center mx-auto mb-20'>
           
           
-           <h1 className="uppercase text-[2.5rem]  font-bold ">Agenda</h1>
-           <hr className="w-[1263px] h-[3.5px] bg-white mb-5"  />
+         <div className="xl:-ml-0 ms:-ml-12">
+          <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Agenda</h1>
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] bg-white" />
+        </div>     
               
           </div>
    

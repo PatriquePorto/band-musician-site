@@ -32,12 +32,12 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`fixed z-50 w-full transition-all ${active ? 'bg-[#030315] py-6' : 'bg-transparent py-2'}`}>
-       <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between">
+    <header className={`fixed z-50 w-full  transition-all ${active ? 'bg-[#030315] py-6' : 'bg-transparent py-2'}`}>
+       <div className="container  mx-auto flex flex-col xl:flex-row items-center justify-between">
            {/* Logo */}
            <Link
                href="#"
-               className="relative flex w-[200px] h-[50px] transition-all mb-4 xl:mb-0"
+               className="relative flex w-[200px] h-[50px] transition-all ms:transition-none mb-4 xl:mb-0"
            >
                <Image
                    src="/images/logo2.png"

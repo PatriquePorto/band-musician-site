@@ -38,27 +38,27 @@ const ImageGallery = () => {
 
   return (
     
-    <section id="photos" className="mt-10">
+    <section id="photos" className="xl:mt-10 ms:mt-10">
     <div className="container mx-auto h-full  flex items-center justify-center xl:justify-start">
    
-        <div className='w-full items-center justify-center mx-auto mt-16'>  
-            <h1 className="uppercase text-[2.5rem]  font-bold ">Fotos</h1>
-            <hr className="w-[1263px] h-[3.5px] bg-white mb-5"  />
-        </div>
+    <div className="xl:-ml-0 ms:-ml-0">
+          <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Fotos</h1>
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] bg-white" />
+        </div>     
  
     </div>
         
 
-    <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <div className="max-w-6xl mx-auto mt-10 px-4 sm:px-6">
 
         <motion.div 
           variants={fadeIn('up', 0.4)}
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
-           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ms:grid-cols-2 gap-4">
             {galleryItems.map((item) => (
-              <div className="gallery-item rounded-3xl object-fill transition ease-in-out delay-150 hover:scale-125 " key={item.index}>
+              <div className="gallery-item rounded-3xl object-fill transition ease-in-out delay-150 hover:scale-110 " key={item.index}>
                 <div onClick={() => handleImageClick(item.image.src)}>
                   <Image
                     src={item.image}
@@ -78,7 +78,7 @@ const ImageGallery = () => {
         <div className=" fixed w-full h-full mt-12 flex items-center justify-center lg:w-2/4 lg:h-5/6 inset-0 sm:w-2/4 sm:h-5/6 sm:inset-1/4 sm:top-12  z-50">
           
           <Image
-              className='w-full h-full '
+              className='w-full h-full xl:w-full xl:h-full '
               src={selectedImage}
               layout='fill'
               quality={100}

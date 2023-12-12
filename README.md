@@ -1,7 +1,7 @@
 <h1 align="center"> Project Band SleepWalkers </h1>
 
 </br>
-<img src="/preview.png" width="100%"></img>
+<img src="" width="100%"></img>
 </br>
 
 <br>

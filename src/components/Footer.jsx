@@ -9,9 +9,9 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"	
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-primary section h-[500px] xl:h-auto">
+    <footer id="contact" className="bg-primary section h-[500px] xl:h-auto" >
       
-       <div className="container mx-auto h-full flex flex-col items-center gap-y-8">
+       <div className="container xl:mt-0 ms:mt-10 mx-auto h-full flex flex-col items-center gap-y-8">
            {/* Email Link */}
           <motion.div
              variants={fadeIn('up', 0.2)}
@@ -20,7 +20,7 @@ const Footer = () => {
              viewport={{ once: false, amount: 0.3 }}
            >
               <Link href='#'>
-                  <h2 className="text-[24px] lg:text-[38px] font-semibold leading-tight">sleepwalkers_brazil@gmail.com</h2>
+                  <h2 className="text-[24px] lg:text-[38px] ms:text-[1rem] font-semibold leading-tight">sleepwalkers_brazil@gmail.com</h2>
               </Link>
           </motion.div>
        {/* Nav */}
@@ -30,10 +30,7 @@ const Footer = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
         >
-            <Nav 
-              containerStyles='flex flex-col xl:flex-row justify-center items-center gap-y-4 xl:gap-x-8 text-sm uppercase font-semibold'
-              linkStyles='hover:text-primary/80 transition-all'
-            />
+        
         </motion.div>
         {/* Socials */}
         <motion.div
@@ -56,16 +53,27 @@ const Footer = () => {
         >
            <Link
              href='#'
-             className="relative w-[280px] h-[100px] flex transition-all"
+             className="relative w-[200px] h-[80px] flex transition-all"
            >
                <Image 
                   src={'/images/logo2.png'}
                   fill
-                  className="object-contain"
+                  className="object-contain w-56 h-72"
                   alt="logo"
                 />
            </Link>
+         
         </motion.div>
+        <motion.div
+             variants={fadeIn('up', 0.8)}
+             initial="hidden"
+             whileInView={'show'}
+             viewport={{ once: false, amount: 0.3 }}
+             className="w-[400px] flex justify-center"
+         >
+               <h4 className="font-bold text-xs xl:text-xs ms:text-[0.7rem]">
+                © SLEEPWALKERS - Offcial Website - All Rights Reserved 2023</h4>
+           </motion.div>
       </div>
     </footer>
   )
