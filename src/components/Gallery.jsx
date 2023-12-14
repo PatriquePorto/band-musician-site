@@ -12,6 +12,7 @@ import Gallery4 from '../../public/images/gallery-4.jpeg';
 import Gallery5 from '../../public/images/gallery-5.jpeg';
 import Gallery6 from '../../public/images/gallery-6.jpeg';
 import Gallery7 from '../../public/images/gallery-7.jpeg';
+import Gallery8 from '../../public/images/gallery-8.jpeg';
 
 const ImageGallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -33,6 +34,7 @@ const ImageGallery = () => {
       { image: Gallery5, index: 4 },
       { image: Gallery6, index: 5 },
       { image: Gallery7, index: 6 },
+      { image: Gallery8, index: 7 },
       // Add more images and their corresponding indexes
     ];
 

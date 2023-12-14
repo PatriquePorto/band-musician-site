@@ -1,22 +1,18 @@
-import Albums from '../components/albums/Albums'
-import Biography from '../components/Biography'
-import Blog from '../components/blog/Blog'
-import Event from '../components/Event'
-import Events from '../components/events/Events'
-import ImageGallery from '../components/Gallery'
-import Intro from '../components/Intro'
-import Notice from '../components/Notice'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
-
+import Main from '../components/Main'
+import Notice from '../components/Notice'
+import Events from '../components/events/Events'
+import Biography from '../components/Biography'
+import Albums from '../components/albums/Albums'
+import ImageGallery from '../components/Gallery'
 import VideoComponent from '../components/Video'
-
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <Header />
-      <Intro />
+      <Main />
       <Notice />
       <Events />
       <Biography />
