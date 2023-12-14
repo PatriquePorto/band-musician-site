@@ -121,7 +121,7 @@ h2 {
 }
 
 .album-player {
-  @apply !w-[110px] !min-w-0 text-center;
+  @apply !w-[118px] !min-w-0 text-center;
 }
 
 .album-player .rap-controls .rap-slider,

@@ -6,6 +6,8 @@ import Events from '../components/events/Events'
 import ImageGallery from '../components/Gallery'
 import Intro from '../components/Intro'
 import Notice from '../components/Notice'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import VideoComponent from '../components/Video'
 
@@ -13,6 +15,7 @@ import VideoComponent from '../components/Video'
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
+      <Header />
       <Intro />
       <Notice />
       <Events />
@@ -20,6 +23,7 @@ export default function Home() {
       <Albums />
       <ImageGallery />
       <VideoComponent />
+      <Footer />
     </main>
   )
 }

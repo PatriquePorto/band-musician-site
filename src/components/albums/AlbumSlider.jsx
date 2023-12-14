@@ -45,7 +45,7 @@ const AlbumSlider = () => {
           {data.map((album) => {
             return (
             <SwiperSlide key={album.id} className="">
-               <div className="w-full bg-secondary/80 xl:w-full ms:w-[100%] rounded-[10px] flex flex-col xl:flex-row items-center
+               <div className="w-full bg-secondary/80 xl:w-[96.7%] ms:w-[100%] rounded-[10px] flex flex-col xl:flex-row items-center
                   p-6 xl:p-12 gap-x-12 ">
                   {/* Image */}
                   <div className="hidden xl:flex w-[300px] h-[300px] xl:w-[500px] xl:h-[500px] relative

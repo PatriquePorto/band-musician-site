@@ -10,7 +10,7 @@ const NavMobile = () => {
   const { isOpen, setIsOpen } = useContext(NavContext)
   return (
     <nav className={`${isOpen ? 'right-0' : '-right-full'}
-     xl:hidden fixed bg-primary w-full  top-0 z-20 bottom-0 transition-all duration-500`}>
+     xl:hidden fixed bg-black w-full  top-0 z-20 bottom-0 transition-all duration-500`}>
        <div 
         onClick={() => setIsOpen(false)}
         className='absolute right-4 top-5 cursor-pointer'>

@@ -2,8 +2,7 @@ import { Alex_Brush, Montserrat } from 'next/font/google'
 import './globals.css'
 
 //Components
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+
 
 //Context Provider
 import NavContextProvider from '../context/NavContext'
@@ -30,10 +29,8 @@ export default function RootLayout({ children }) {
     <NavContextProvider>
            <html lang="en">
       <body className={`${alexBrush.variable} ${montSerrat.variable}
-      overflow-x-hidden relative`}>
-        <Header />
-        {children}
-        <Footer />   
+      overflow-x-hidden relative`}>    
+        {children}   
      </body>
     </html>
     </NavContextProvider>
