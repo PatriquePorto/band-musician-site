@@ -131,7 +131,7 @@ const AlbumSlider = () => {
          slidesPerView={5}
          freeMode={true}
          watchSlidesProgress={true}
-         className="thumb-slider"
+         className="thumb-slider mt-6"
         >
           {data.map((thumb, index) => {
             return (

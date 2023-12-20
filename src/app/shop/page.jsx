@@ -2,6 +2,8 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
+import { ClerkProvider } from '@clerk/nextjs/app-beta'
+import { ptBR } from '@clerk/localizations'
 
 export const metadata = {
   title: 'SleepWalkers || Store',
@@ -10,12 +12,14 @@ export const metadata = {
 
 const  Page = () => {
   return (
+    <ClerkProvider localization={ptBR}>
     <React.Fragment>  
       <div>
       <Navbar />
       <Main />
       </div>   
     </React.Fragment>
+    </ClerkProvider>
   )
 }
 

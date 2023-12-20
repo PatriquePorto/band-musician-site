@@ -29,8 +29,10 @@ export default function RootLayout({ children }) {
     <NavContextProvider>
            <html lang="en">
       <body className={`${alexBrush.variable} ${montSerrat.variable}
-      overflow-x-hidden relative`}>    
+      overflow-x-hidden relative`}>  
+      
         {children}   
+      
      </body>
     </html>
     </NavContextProvider>
