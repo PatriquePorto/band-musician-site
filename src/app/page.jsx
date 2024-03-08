@@ -14,13 +14,13 @@ function Home() {
 
    const [currentLanguage, setCurrentLanguage] = useState(language);
 
-   const handleLanguageChange = () => {
-     const newLanguage = currentLanguage === 'pt-BR' ? 'en-US' : 'pt-BR';
-     changeLanguage(newLanguage);
-     setCurrentLanguage(newLanguage);
-     
+   const handleLanguageChange = (newLanguage) => {
 
+    changeLanguage(newLanguage);
+    setCurrentLanguage(newLanguage);
+    
   };
+  
 
   return (
    
@@ -49,7 +49,7 @@ function Home() {
           className="flex flex-col pr-24">
           
                   <Image 
-                     onClick={() => handleLanguageChange('pt-BR')} 
+                    onClick={() => handleLanguageChange('pt-BR')}
                     className="w-12 h-12 md:w-full md:h-full" 
                       src={BrasilImg} 
                       width={100} 
@@ -93,6 +93,6 @@ function Home() {
     </main>
     
   )
-}
 
+    }
 export default Home

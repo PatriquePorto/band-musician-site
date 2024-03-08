@@ -11,6 +11,7 @@ import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 import Footer from './components/Footer'
 
+
 export const metadata = {
   title: 'SleepWalkers || Store',
   description: 'SleepWalkers is a music band based in São Paulo Brazil.',

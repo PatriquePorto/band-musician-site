@@ -8,6 +8,7 @@ import { ProductType } from "../types/ProductType"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 export default function CartDrawer() {
    const useStore = useCartStore()
 

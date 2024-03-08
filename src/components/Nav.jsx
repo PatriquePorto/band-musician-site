@@ -5,9 +5,6 @@ import { Link } from "react-scroll"
 import { useMediaQuery } from "react-responsive"
 import { useTranslation } from 'react-i18next'
 
-
-
-
 const Nav = ({containerStyles, linkStyles}) => {
 
   const { t } = useTranslation()
