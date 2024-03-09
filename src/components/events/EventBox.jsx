@@ -1,12 +1,11 @@
 'use client'
 import Image from "next/image"
 import { useTranslation } from "react-i18next"
-
+import { motion } from "framer-motion"
+import { fadeIn } from "../../../variants"
 //Icons
 import { RiMapPin2Fill } from "react-icons/ri"
 
-import { motion } from "framer-motion"
-import { fadeIn } from "../../../variants"
 const EventBox = ({ events }) => {
   
   return (
@@ -17,7 +16,7 @@ const EventBox = ({ events }) => {
          <div className='w-full items-center ms:-mt-8 justify-center mx-auto mb-20'>
           
           <div className="xl:-ml-0 ms:-ml-12 sm:-ml-0 md:ml-4">
-          <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">{useTranslation().t('Agenda')}</h1>
+          <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">{useTranslation().t('agenda')}</h1>
             <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] md:w-[98%] bg-white" />
         </div>    
        

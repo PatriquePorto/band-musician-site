@@ -1,6 +1,6 @@
 {
     "translation": {
-        "home": "INÍCIO",
+        "inicio": "INÍCIO",
         "agenda": "AGENDA",
         "biografia": "BIOGRAFIA",
         "discografia": "DISCOGRAFIA",
@@ -26,7 +26,16 @@
      "Fotos": "Fotos",
      "Videos": "Vídeos",
 
-     "Adicionar no Carrinho": "Adicionar ao Carrinho"
+     "Adicionar no Carrinho": "Adicionar no Carrinho",
+     "Item adicionado no carrinho": "Item adicionado no carrinho",
+     "Item removido do carrinho": "Item removido do carrinho",
+     "Fazer Login": "Fazer Login",
+     "Voltar para a loja": "Voltar para a loja",
+     "Quantidade": "Quantidade",
+     "Preço": "Preço",
+     "Adicionar": "Adicionar",
+     "Remover": "Remover",
+     "Finalizar Compra": "Finalizar Compra"
 
     }
  }

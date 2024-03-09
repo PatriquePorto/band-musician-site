@@ -7,7 +7,13 @@ export default function Product() {
 
                 <SkeletonCard />
                 <SkeletonCard />
-                <SkeletonCard />           
+                <SkeletonCard />   
+                <SkeletonCard />
+                <SkeletonCard />
+                <SkeletonCard />     
+                <SkeletonCard />
+                <SkeletonCard /> 
+                           
             </div>
         </div>
     )

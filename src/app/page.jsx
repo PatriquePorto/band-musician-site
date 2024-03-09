@@ -85,7 +85,7 @@ function Home() {
         </Link>
 
         <div className="absolute top-40 text-1xl text-white font-bold">
-          ® Oficial Website SleepWalkers - All Rights Reserverd 2023
+          ® Official SleepWalkers Website - All Rights Reserverd 2023
         </div>
 
   </div>

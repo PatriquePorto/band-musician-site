@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { SignedIn, SignedOut } from '@clerk/nextjs'
 import { SignInButton, UserButton } from '@clerk/nextjs'
 import Cart from './Cart'
+import { useTranslation } from 'react-i18next'
 
 const Navbar = () => {
  
@@ -26,7 +27,7 @@ const Navbar = () => {
             <SignedOut redirectUrl='/shop'>
                <SignInButton mode='modal' redirectUrl='/shop' >
                   <button className='border rounded-md border-gray-400 px-3 py-2'>
-                      Fazer Login
+                     { useTranslation().t('Fazer Login')}
                   </button>
                </SignInButton>
             </SignedOut>

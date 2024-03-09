@@ -1,13 +1,29 @@
 'use client'
 
 import NextLink from 'next/link'
+import { useState } from "react"
 import { Link } from "react-scroll"
 import { useMediaQuery } from "react-responsive"
 import { useTranslation } from 'react-i18next'
 
 const Nav = ({containerStyles, linkStyles}) => {
 
-  const { t } = useTranslation()
+  const { t, i18n: { changeLanguage, language} } = useTranslation()
+
+  const [currentLanguage, setCurrentLanguage] = useState(language);
+
+  const handleLanguageChange = (newLanguage) => {
+
+    if (newLanguage === 'pt-BR'){
+      setCurrentLanguage('pt-BR')
+    } else {
+      setCurrentLanguage('en-US')
+    }
+
+  
+ };
+
+
 
   const links = [
     {
@@ -59,7 +75,7 @@ const Nav = ({containerStyles, linkStyles}) => {
         if (link.name === 'LOJA' | link.name === 'SHOP') {
           return (
             <NextLink href={link.path} 
-            target="_blank" rel="noopener noreferrer"
+            onClick={() => handleLanguageChange('')}
             className={`${linkStyles} text-[1.25rem] px-1 cursor-pointer scale-y-150 tracking-tighter bg-red-500 rounded-lg  hover:bg-blue-500/100 border-transparent uppercase font-bold`} key={index}   >
               {link.name}
             </NextLink>

@@ -25,7 +25,17 @@
 
      "Fotos": "Photos",
      "Videos": "Videos",
-     "Adicionar no Carrinho": "Add to Cart"
+
+     "Adicionar no Carrinho": "Add to Cart",
+     "Item adicionado no carrinho": "Item added to cart",
+     "Item removido do carrinho": "Item removed from cart",
+     "Fazer Login": "Login",
+     "Voltar para a loja": "Back to Store",
+     "Quantidade": "Quantity",
+     "Preço": "Price",
+     "Adicionar": "Add",
+     "Remover": "Remove",
+     "Finalizar Compra": "Checkout"
 
    }
 }
